@@ -8,10 +8,12 @@ One of the best ways to make sure that data you share is working for you is to c
 
 ## STRUCTURE
 
+There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivitty.
+
 - ### R
-    - ggplot2
+    - [ggplot2]()
     - plotly
-    - leaflet (interactive mapping)
+    - [leaflet (interactive mapping)](https://markdunning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html)
     - shiny & html widgets
 - ## Python
     - matplotlib
