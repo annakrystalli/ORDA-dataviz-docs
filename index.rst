@@ -20,12 +20,17 @@ therefore developing a data visualisation showcase site
 STRUCTURE
 ---------
 
+There many tools for visualisation. We've narrowed it down to some of
+the most popular technologies that interact well with research
+workflows, are flexible, and allow introducing interactivitty.
+
 -  .. rubric:: R
       :name: r
 
-   -  ggplot2
+   -  `ggplot2 <>`__
    -  plotly
-   -  leaflet (interactive mapping)
+   -  `leaflet (interactive
+      mapping) <https://markdunning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html>`__
    -  shiny & html widgets
 
 -  .. rubric:: Python
