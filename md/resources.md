@@ -1,3 +1,7 @@
+# Resources
+- # Web
+    [Dataviz tools](http://dataviz.tools/) maintain a resource of tools, tutorials and information to assist with data visualisation.
+
 - # Books
     The University Library keeps a number of reference quality books in the collection as a guide to producing high quality, informative graphics.
     - [The visual display of quantatitive information, Edward Tufte](http://find.shef.ac.uk/primo_library/libweb/action/dlSearch.do?institution=44SFD&query=title,exact,the%20visual%20display%20of%20quantitative%20information&vid=SFD_VU2&search_scope=LSCOP_SFD&tab=local) 
