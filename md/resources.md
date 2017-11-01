@@ -5,17 +5,17 @@
     - [Beautiful visualization : \[looking at data through the eyes of experts\] / edited by Julie Steele and Noah Iliinsky.](http://find.shef.ac.uk/SFD_VU2:LSCOP_SFD:44SFD_ALMA_DS21204443980001441)
 
 
-- # Python Libraries 
+- # Python Libraries <a name="python"></a>
     - [Python Graph Gallery](https://python-graph-gallery.com/)
-    - [Matplotlib](http://matplotlib.org/) is a publication quality 2d plotting library, they provide [resources](http://matplotlib.org/contents.html) and [documentation](http://matplotlib.org/contents.html) 
+    - <a name="matplotlib"></a>[Matplotlib](http://matplotlib.org/) is a publication quality 2d plotting library, they provide [resources](http://matplotlib.org/contents.html) and [documentation](http://matplotlib.org/contents.html) 
         - [Nicolas P. Rougier](https://www.labri.fr/perso/nrougier/teaching/matplotlib/) has a helpful introduction to the library. 
         - [effective matplotlib](http://pbpython.com/effective-matplotlib.html) also provides useful commentary.
-    - [Seaborn](http://seaborn.pydata.org/index.html) is a plotting library for statistical work, often found alongside scikit learn or pandas.
-    - [Bokeh](https://bokeh.pydata.org/en/latest/docs/user_guide.html) is a python library for generating, and publishing interactive visualisations.
+    - <a name="seaborn"></a>[Seaborn](http://seaborn.pydata.org/index.html) is a plotting library for statistical work, often found alongside scikit learn or pandas.
+    - <a name="bokeh"></a>[Bokeh](https://bokeh.pydata.org/en/latest/docs/user_guide.html) is a python library for generating, and publishing interactive visualisations.
         - [Full Stack Python](https://www.fullstackpython.com/bokeh.html) maintains a helpful list resources for discovering the Bokeh library.  
         
 
-- # R Libraries
+- # R Libraries <a name="R"></a>
     - [ggplot](http://ggplot2.org/) Is a high quality plotting library for R
         The ggplot developers recommend the following books, available from the library:
         - R Graphics Cookbook: [hardcopy](http://find.shef.ac.uk/SFD_VU2:SCOP_EVERYTHING:44SFD_ALMA_DS21242869370001441), [ebook](http://find.shef.ac.uk/SFD_VU2:SCOP_EVERYTHING:44SFD_ALMA_DS51242714290001441)
@@ -25,7 +25,7 @@
 
 
 - # Hosting and Publishing Visualisations
-    - [Jupyter notebooks](http://jupyter.org/) are self contained documents for writing, executing and publishing analysis.
+    - <a name="jupiter"></a>[Jupyter notebooks](http://jupyter.org/) are self contained documents for writing, executing and publishing analysis.
     the resulting document is html easily shared and made interactive with other technologies referenced here. 
         - [Documentation](https://jupyter-notebook.readthedocs.io/en/latest/) 
     
@@ -35,12 +35,12 @@
 
 
 - ## Javascript
-    - [D3.js](https://github.com/d3/d3/wiki/Gallery) is an underlying technology for many of the browser based visualisations. To further expand on the plotting abilities, or generate custom interactions we recommed considering this library.
-    - [Leaflet.js](http://leafletjs.com/) is a javascript library for generating interactive maps with customisable overlays and map tiles. [R-leaflet](https://rstudio.github.io/leaflet/) packages are available.
-        - [Mapbox](https://www.mapbox.com), a provider of mapping tile sets, have a number of resources to help you use leaflet. 
+    - <a name="D3"></a>[D3.js](https://github.com/d3/d3/wiki/Gallery) is an underlying technology for many of the browser based visualisations. To further expand on the plotting abilities, or generate custom interactions we recommed considering this library.
+    - <a name="leaflet"></a>[Leaflet.js](http://leafletjs.com/) is a javascript library for generating interactive maps with customisable overlays and map tiles. [R-leaflet](https://rstudio.github.io/leaflet/) packages are available.
+        - <a name="mapbox"></a>[Mapbox](https://www.mapbox.com), a provider of mapping tile sets, have a number of resources to help you use leaflet. 
 
 - ## Frontend
-    - [Vega](https://vega.github.io/) is a declaritive tool for generating interactive visualisations in the browser.
+    - <a name="vega"></a>[Vega](https://vega.github.io/) is a declaritive tool for generating interactive visualisations in the browser.
     - [Vega-Lite](https://vega.github.io/vega-lite/) is also available as a higher level interface.    
 
     - [ggvis](http://ggvis.rstudio.com/) is a R package for generating vega visualisations.
