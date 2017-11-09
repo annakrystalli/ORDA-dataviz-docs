@@ -22,3 +22,6 @@ There many tools for visualisation. We've narrowed it down to some of the most p
 - ## Vega-lite
     - GUI
     - Programmatic Vega-lite
+    
+- ## Examples
+    - [Senior *et al*](examples/Senior-R_example.nb.html)
