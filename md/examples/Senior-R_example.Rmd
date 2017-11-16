@@ -23,11 +23,11 @@ fs_download(5414629)
 This call sends you to a figshare page which prompts you for authentication. Once authenticated, the function runs.
 
 
-Calling the function given only the figshare article number returns the download URLs of the objects associated with the article. Also, **giving just the article number downloads the latest version** of the materials. Use the following notation to get a specific version, in this case **version 1**. You can also use `show_versions = T` to see what versions are available and specify a  version through argument `version`.
+Calling the function returns the download URLs of the objects associated with the article. Also, **giving just the article number downloads the latest version** of the materials. Use`show_versions = T` to see what versions are available and specify a  version through argument `version`.
 
 
-```{r}
-fs_download(5414629, version = 3)
+```{r, eval=FALSE}
+fs_download(5414629)
 ```
 
 
@@ -45,34 +45,35 @@ urls <- fs_download(5414629)
 
 ```{r}
 data <- read_csv(urls[1,1])
+data
 ```
+
+
+
+
 ```{r}
 metadata <- read_csv(urls[2,1])
+metadata
 ```
 
-## Map
+### Plot map
 
-```{r}
+```{r, message=F}
 library(leaflet)
-
-require(devtools)
-install_github('ramnathv/rCharts@dev')
-install_github('ramnathv/rMaps')
-library(rMaps)
 library(sp)
 ```
 
 
 ```{r}
-names(providers)
+names(providers) %>% head()
 ```
-
+### Convert data to SpatialPolygonDataFrame
 ```{r}
 shp <- data
 coordinates(shp) <- ~ longitude + latitude
 ```
 
-
+## Map
 ```{r}
 
 leaflet(shp) %>%
@@ -80,7 +81,8 @@ leaflet(shp) %>%
     addMarkers(popup = ~as.character(plotID), label = ~as.character(plotID))
 ```
 
-<i class="icon "></i>
+
+
 
 ```{r}
 greenLeafIcon <- makeIcon(
@@ -92,27 +94,7 @@ greenLeafIcon <- makeIcon(
   shadowAnchorX = 0, shadowAnchorY = 4
 )
 
-
-apertureIcon <- makeIcon(
-  iconUrl = "icon/aperture.png",
-  iconWidth = 25, iconHeight = 25,
-  iconAnchorX = 22, iconAnchorY = 94,
-  shadowUrl = "http://leafletjs.com/examples/custom-icons/leaf-shadow.png",
-  shadowWidth = 3, shadowHeight = 14,
-  shadowAnchorX = 0, shadowAnchorY = 4
-)
-
-locatorIcon <- makeIcon(
-  iconUrl = "icon/locator1.png",
-  iconWidth = 25, iconHeight = 35,
-  iconAnchorX = 0, iconAnchorY = 0,
-  shadowUrl = "http://leafletjs.com/examples/custom-icons/leaf-shadow.png",
-  shadowWidth = 3, shadowHeight = 14,
-  shadowAnchorX = 0, shadowAnchorY = 4
-)
-
 leaflet(shp) %>%
    addProviderTiles(providers$Esri.WorldImager) %>% 
-    addMarkers(popup = ~as.character(plotID), label = ~as.character(plotID), icon = locatorIcon)
+    addMarkers(popup = ~as.character(plotID), label = ~as.character(plotID), icon = greenLeafIcon)
 ```
-Star by Rflor from the Noun Project
